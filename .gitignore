@@ -1,1 +1,3 @@
 assets/
+!assets/imgs/*.svg
+!assets/icons/*.svg
