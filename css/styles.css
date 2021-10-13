@@ -494,7 +494,7 @@ main {
 .plans-content__costo--dollar {
     position: absolute;
     display: inline-block;
-    left: 6rem;
+    left: 4rem;
     top: 2.2rem;
     font-family: "inter";
     font-size: 1.2rem;
