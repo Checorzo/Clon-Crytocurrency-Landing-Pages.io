@@ -1,4 +1,2 @@
-!assets/imgs/*.svg
-!assets/icons/*.svg
-assets/imgs
-assets/icons
+assets/imgs/*.png
+assets/imgs/*.jpg
