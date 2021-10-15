@@ -17,4 +17,8 @@ html {
     flex-wrap: wrap;
     /* margin-left: 1rem; */
 }
+
+.plans-content__costo--dollar {
+    left: 88px;
+}
 /* En desarrollo Mobile firts se crean archivos css para los breakpoints al ir creciendo el display del dispositivo. Esto garantiza que los dispositivos mobile descarga los archivos necesarios*/
