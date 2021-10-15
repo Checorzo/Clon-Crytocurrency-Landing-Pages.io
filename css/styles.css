@@ -146,13 +146,25 @@ main {
     margin-right: auto;
     margin-left: auto;
 }
-.cover-table {
-    width: 70%;
-    min-width: 23.5rem;
-    max-width: 50rem;
-    height: 36rem;
+
+.main-tables-container {
+    display: flex;
+    width: 88%;
+    max-width: 60rem;
+    height: 33rem;
     margin: 0 auto;
-    font-family: "Inter",sans-serif ;
+    overflow-x: scroll;
+    overscroll-behavior-x: center;
+    scroll-snap-type: x proximity
+}
+.cover-table {
+    width: 30%;
+    min-width: 23.5rem;
+    max-width: 25rem;
+    height: 32rem;
+    margin: 0 auto;
+    font-family: "Inter",sans-serif;
+    scroll-snap-align: center;
 }
 .table-title {
     margin-bottom: 1.5rem;
@@ -162,6 +174,7 @@ main {
     line-height: 2.3rem;
     padding-left: 2rem;
     text-align: left;
+    width: 10rem;
 }
 
 .table-title--orange {
@@ -283,6 +296,7 @@ main {
    width: 3.7rem;
    height: 2.4rem;
    background-image: url("../assets/icons/batata.svg");
+   background-repeat: no-repeat;
    top: -1.2rem;
    left: calc( 50% - 20px );
 }
@@ -316,7 +330,7 @@ main {
 .cards-container {
    width: 100%;
    min-width: 28.8rem;
-   max-width: 50rem;
+   max-width: 70rem;
    height: auto;
    margin: 0 auto;
 }
@@ -324,7 +338,7 @@ main {
 .cards-container-feature {
    width: 90%;
    min-width: 28.8rem;
-   max-width: 50rem;
+   max-width: 30rem;
    min-height: 15rem;
    margin: 1.5rem auto;
    padding: 1rem;
@@ -360,7 +374,7 @@ main {
    width: 98%;
    max-width: 45rem;
    height: auto;
-   margin: 1rem 0;
+   margin: 1rem 1rem.5rem;
 }
 
 .decription-container__title {
@@ -434,8 +448,9 @@ main {
     display: flex;
     justify-content: space-between;
     height: 31.6rem;
+    /* El siguiente codigo es para hacer un scroll en este contenedor */
     overflow-x: scroll;
-    overscroll-behavior-x: none;
+    overscroll-behavior-x: center;
     scroll-snap-type: x proximity;
     padding: 0 2rem;
 }
@@ -529,9 +544,9 @@ main {
     height: 2.4rem;
     background-image: url("../assets/icons/arrow-right.svg");
     vertical-align: text-bottom;
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .container {
@@ -563,4 +578,9 @@ main {
 .foot-list__link {
     text-decoration: none;
     color: var(--just-white);
+}
+
+.container-foot__batatabit-logo {
+    width: 6.4rem;
+    height: 5rem;
 }
